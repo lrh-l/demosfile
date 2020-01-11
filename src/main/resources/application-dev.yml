@@ -1,0 +1,20 @@
+server:
+  port: 8089
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.159.88:3306/FILE_IMG
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.example.demosfile.pojo
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug
